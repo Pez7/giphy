@@ -21,7 +21,7 @@
 			<div class="col-lg-offset-3 col-lg-6" id="elementos"></div>
 		</div>
 		<div>
-			<fb:login-button 
+			<fb:login-button>
   				scope="public_profile,email"
   				onlogin="checkLoginState();">
 			</fb:login-button>
@@ -50,7 +50,7 @@
     	statusChangeCallback(response);
 	});
 
-	
+
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
